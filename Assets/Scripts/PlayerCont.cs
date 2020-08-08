@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerCont : MonoBehaviour
 {
-
+    public int cashValue = 1;
     public float speed;
     private Rigidbody2D rb;
     private Vector2 moveVelocity;
@@ -18,6 +18,7 @@ public class PlayerCont : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Coin"))
         {
+            Score.instance.ChangeScore(cashValue);
             Destroy(other.gameObject);
         }
     }
