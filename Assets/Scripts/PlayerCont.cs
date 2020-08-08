@@ -23,4 +23,6 @@ public class PlayerCont : MonoBehaviour
     {
         rb.MovePosition(rb.position + moveVelocity * Time.fixedDeltaTime);
     }
+
+
 }
