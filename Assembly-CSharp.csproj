@@ -58,7 +58,6 @@
     <Compile Include="Assets\Scripts\PlayerCont.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\FOV.cs" />
-    <Compile Include="Assets\Scripts\Cash.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
