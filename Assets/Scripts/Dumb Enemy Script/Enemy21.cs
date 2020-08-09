@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy20 : MonoBehaviour
+public class Enemy21 : MonoBehaviour
 {
     [SerializeField] private Transform pffov;
     private FOV fov;
@@ -87,25 +87,25 @@ public class Enemy20 : MonoBehaviour
             }
             else
             {
-                Invoke("Right", 4);
+                Invoke("Right", 14);
             }
         }
         if (moveRight)
         {
-            Invoke("Up", 4f);
+            Invoke("Left", 14);
         }
-         if (moveUp)
-         {
-             Invoke("Wait", 1);
-         }
-         if (wait)
-         {
-             Invoke("Down", 4);
-          }
-         if (moveDown)
-          {
-             Invoke("Left", 1);
-          }
+        // if (moveUp)
+        // {
+        //     Invoke("Down", 3.5f);
+        // }
+        // if (moveDown)
+        // {
+        //     Invoke("Left", 3.5f);
+        //  }
+        // if (moveDown)
+        //  {
+        //     Invoke("Up", 2);
+        //  }
 
 
 
