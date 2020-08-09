@@ -17,7 +17,7 @@ public class PlayerCont : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        specialColor = GameObject.Find("Cash (3)").GetComponent<SpriteRenderer>().color;
+        specialColor = GameObject.Find("specialCash").GetComponent<SpriteRenderer>().color;
     }
 
     void OnTriggerEnter2D(Collider2D other)
