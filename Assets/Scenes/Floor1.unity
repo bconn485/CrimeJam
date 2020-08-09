@@ -799,7 +799,7 @@ GameObject:
   m_Component:
   - component: {fileID: 153333765}
   - component: {fileID: 153333766}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BackgroundImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1099,7 +1099,7 @@ GameObject:
   m_Component:
   - component: {fileID: 180846939}
   - component: {fileID: 180846940}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: piece6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1183,7 +1183,7 @@ GameObject:
   - component: {fileID: 208326303}
   - component: {fileID: 208326302}
   - component: {fileID: 208326301}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: piece4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1415,7 +1415,7 @@ GameObject:
   - component: {fileID: 270350524}
   - component: {fileID: 270350523}
   - component: {fileID: 270350522}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: piece5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2265,7 +2265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 514487960}
   - component: {fileID: 514487961}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PointsHandler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2699,7 +2699,7 @@ GameObject:
   - component: {fileID: 641117708}
   - component: {fileID: 641117707}
   - component: {fileID: 641117706}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Win
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2805,7 +2805,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 659240477}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: puzzle_pieces
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3171,7 +3171,7 @@ GameObject:
   - component: {fileID: 761375375}
   - component: {fileID: 761375374}
   - component: {fileID: 761375373}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: piece1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3489,7 +3489,7 @@ GameObject:
   m_Component:
   - component: {fileID: 812428639}
   - component: {fileID: 812428640}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: piece3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3762,7 +3762,7 @@ GameObject:
   m_Component:
   - component: {fileID: 878655803}
   - component: {fileID: 878655804}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: piece5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3843,7 +3843,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 879180676}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Puzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3859,7 +3859,7 @@ Transform:
   m_GameObject: {fileID: 879180675}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1, y: 0, z: -37}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 659240477}
   - {fileID: 1992354605}
@@ -4332,7 +4332,7 @@ GameObject:
   - component: {fileID: 958266307}
   - component: {fileID: 958266306}
   - component: {fileID: 958266305}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: piece6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4907,7 +4907,7 @@ GameObject:
   - component: {fileID: 1028070873}
   - component: {fileID: 1028070872}
   - component: {fileID: 1028070871}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: piece3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5730,7 +5730,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1275255324}
   - component: {fileID: 1275255325}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: piece1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7260,7 +7260,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1514947270}
   - component: {fileID: 1514947271}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: piece2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7562,7 +7562,7 @@ GameObject:
   - component: {fileID: 1576438716}
   - component: {fileID: 1576438715}
   - component: {fileID: 1576438714}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: piece2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8249,7 +8249,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1729770407}
   - component: {fileID: 1729770408}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: piece4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9522,7 +9522,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1992354605}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: puzzle_piecesSolved
   m_TagString: Untagged
   m_Icon: {fileID: 0}

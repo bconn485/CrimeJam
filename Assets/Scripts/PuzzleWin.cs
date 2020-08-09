@@ -34,7 +34,7 @@ public class PuzzleWin : MonoBehaviour
 
     private IEnumerator finished()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         puzzle.SetActive(false);
         GameObject.Find("Main Camera").GetComponentInChildren<Camera>().orthographicSize = 5;
     }
