@@ -65,6 +65,8 @@
     <Compile Include="Assets\Scripts\Dumb Enemy Script\Enemy3.cs" />
     <Compile Include="Assets\Scripts\Dumb Enemy Script\Enemy4.cs" />
     <Compile Include="Assets\Scripts\Dumb Enemy Script\Enemy5.cs" />
+    <Compile Include="Assets\Scripts\SceneSwitch.cs" />
+    <Compile Include="Assets\Scripts\Dumb Enemy Script\Enemy20.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

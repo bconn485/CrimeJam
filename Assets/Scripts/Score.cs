@@ -19,7 +19,7 @@ public class Score : MonoBehaviour
     public void ChangeScore(int cash)
     {
         score += cash;
-        text.text = "X" + score.ToString();
+     //   text.text = "X" + score.ToString();
     }
     // Update is called once per frame
     void Update()
