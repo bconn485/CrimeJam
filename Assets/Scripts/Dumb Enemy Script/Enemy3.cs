@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy3 : MonoBehaviour
 {
     [SerializeField] private Transform pffov;
     private FOV fov;
@@ -12,9 +12,10 @@ public class Enemy : MonoBehaviour
     public bool moveDown;
     public bool moveLeft;
     public bool moveRight;
+    public bool wait;
     Vector3 Velocity;
     int i;
-   public Rigidbody2D rb;
+    public Rigidbody2D rb;
     void Start()
     {
         fov = Instantiate(pffov, null).GetComponent<FOV>();
@@ -31,7 +32,7 @@ public class Enemy : MonoBehaviour
         }
         if (moveDown)
         {
-            transform.Translate(0, 0, -2 * Time.deltaTime * speed);
+            transform.Translate(0, -2 * Time.deltaTime * speed, 0);
             transform.localScale = new Vector2(1, 1);
         }
         if (moveLeft)
@@ -42,6 +43,11 @@ public class Enemy : MonoBehaviour
         if (moveRight)
         {
             transform.Translate(2 * Time.deltaTime * speed, 0, 0);
+            transform.localScale = new Vector2(1, 1);
+        }
+        if (wait)
+        {
+            transform.Translate(0, 0, 0);
             transform.localScale = new Vector2(1, 1);
         }
     }
@@ -59,32 +65,54 @@ public class Enemy : MonoBehaviour
     {
         if (previousPosition != transform.position)
         {
-            velocity = (-1)*(previousPosition - transform.position);
+            velocity = (-1) * (previousPosition - transform.position);
             previousPosition = transform.position;
         }
         rb = GetComponent<Rigidbody2D>();
         Velocity = rb.velocity;
         fov.SetOrigin(transform.position);
         fov.SetAimDirection(velocity);
-        
+
     }
 
     private void FixedUpdate()
     {
         Move();
-        if (moveRight || i == 0)
+        if (moveLeft || i == 0)
         {
-            Invoke("Left", 2);
-            i++;
+            if (i == 0)
+            {
+                Right();
+                i++;
+            }
+            else
+            {
+                Invoke("Right", 5.3f);
+            }
         }
-        if (moveLeft)
+        if (moveRight)
         {
-            Invoke("Right", 2);
+            Invoke("Up", 5.3f);
         }
+        if (moveUp)
+        {
+            Invoke("Down", 5.3f);
+        }
+        if (moveDown)
+        {
+            Invoke("Left", 5.3f);
+        }
+        // if (moveDown)
+        //  {
+        //     Invoke("Up", 2);
+        //  }
+
+
 
     }
     private void Left()
     {
+        wait = false;
         moveLeft = true;
         moveRight = false;
         moveDown = false;
@@ -92,6 +120,7 @@ public class Enemy : MonoBehaviour
     }
     private void Right()
     {
+        wait = false;
         moveLeft = false;
         moveRight = true;
         moveDown = false;
@@ -99,6 +128,7 @@ public class Enemy : MonoBehaviour
     }
     private void Up()
     {
+        wait = false;
         moveLeft = false;
         moveRight = false;
         moveDown = false;
@@ -106,10 +136,18 @@ public class Enemy : MonoBehaviour
     }
     private void Down()
     {
+        wait = false;
         moveLeft = false;
         moveRight = false;
         moveDown = true;
         moveUp = false;
     }
-
+    private void Wait()
+    {
+        wait = true;
+        moveLeft = false;
+        moveRight = false;
+        moveDown = false;
+        moveUp = false;
+    }
 }
