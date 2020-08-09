@@ -10,7 +10,7 @@ public class FOV : MonoBehaviour
     private float fov;
     void Start()
     {
-        fov = 60f;
+        fov = 65f;
         mesh = new Mesh();
         GetComponent<MeshFilter>().mesh = mesh;
         origin = Vector3.zero;

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy23 : MonoBehaviour
+public class Enemy25 : MonoBehaviour
 {
     [SerializeField] private Transform pffov;
     private FOV fov;
@@ -78,7 +78,7 @@ public class Enemy23 : MonoBehaviour
     private void FixedUpdate()
     {
         Move();
-        if (moveLeft || i == 0)
+        if (moveUp || i == 0)
         {
             if (i == 0)
             {
@@ -94,14 +94,14 @@ public class Enemy23 : MonoBehaviour
         {
             Invoke("Up", 7);
         }
-        if (moveUp)
-        {
-            Invoke("Right", 7);
-        }
-        if (moveRight)
-        {
-            Invoke("Left", 7);
-        }
+       // if (moveUp)
+        //{
+          //  Invoke("Right", 7);
+        //}
+        //if (moveRight)
+        //{
+          //  Invoke("Left", 7);
+        //}
         // if (moveDown)
         //  {
         //     Invoke("Up", 2);
