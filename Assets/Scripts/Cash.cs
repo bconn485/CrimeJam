@@ -4,28 +4,19 @@ using UnityEngine;
 
 public class Cash : MonoBehaviour
 {
-    public AudioClip pickupSound;
-    public AudioSource audio;
-
-    public void Start()
+    public int cashValue=1;
+    // Start is called before the first frame update
+    void Start()
     {
-        audio = GetComponent<AudioSource>();
+        
     }
 
-    public void Collected()
+    // Update is called once per frame
+    void Update()
     {
-      //  audio.PlayOneShot(Coin, 0.7F);
-        // do animation, whatever
+        if(gameObject == null)
+        {
+            Score.instance.ChangeScore(cashValue);
+        }
     }
-
-    void OnTriggerEnter(Collider other)
-    {
-        //Collectable oc = other.transform.GetComponent<Collectable>();
-        //if (oc)
-        //{
-       //     oc.Collected();
-            // do what the player needs to do when they pick something up...
-       // }
-    }
-
-    }
+}
