@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy20 : MonoBehaviour
+public class Enemy22 : MonoBehaviour
 {
+
     [SerializeField] private Transform pffov;
     private FOV fov;
     // Start is called before the first frame update
@@ -78,34 +79,34 @@ public class Enemy20 : MonoBehaviour
     private void FixedUpdate()
     {
         Move();
-        if (moveLeft || i == 0)
+        if (moveRight || i == 0)
         {
             if (i == 0)
             {
-                Right();
+                Left();
                 i++;
             }
             else
             {
-                Invoke("Right", 4);
+                Invoke("Left", 14);
             }
         }
-        if (moveRight)
+        if (moveLeft)
         {
-            Invoke("Up", 4f);
+            Invoke("Right", 14);
         }
-         if (moveUp)
-         {
-             Invoke("Wait", 1);
-         }
-         if (wait)
-         {
-             Invoke("Down", 4);
-          }
-         if (moveDown)
-          {
-             Invoke("Left", 1);
-          }
+        // if (moveUp)
+        // {
+        //     Invoke("Down", 3.5f);
+        // }
+        // if (moveDown)
+        // {
+        //     Invoke("Left", 3.5f);
+        //  }
+        // if (moveDown)
+        //  {
+        //     Invoke("Up", 2);
+        //  }
 
 
 
