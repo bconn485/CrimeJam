@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 11680165}
   m_Layer: 0
   m_Name: End
-  m_TagString: EndOne
+  m_TagString: EndTwo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3167,7 +3167,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfd60f8829a7f044a8fc173c512338dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelChange: TitleScene
+  levelChange: Floor2
+  levelChange2: Floor3
   cashValue: 1
   speed: 2
   puzzle: {fileID: 0}
@@ -7259,7 +7260,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2029594988}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.04, y: -0.39, z: -10}
+  m_LocalPosition: {x: 8.93, y: 0.03, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1567618347}
@@ -7274,7 +7275,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2029594988}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f52197d5a5fa84680343be1ebe06c7, type: 3}
+  m_Script: {fileID: 11500000, guid: d515d3903bd85c34e85d77589b29f6d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pffov: {fileID: 571066406527870063, guid: d814b6732e6975b49a8983fe0a110c7b, type: 3}
