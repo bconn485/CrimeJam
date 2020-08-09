@@ -9849,7 +9849,7 @@ PrefabInstance:
     - target: {fileID: 3040532121010719099, guid: eca5587fe58f1de46b3711d26d0e2944,
         type: 3}
       propertyPath: m_Name
-      value: Cash (3)
+      value: specialCash
       objectReference: {fileID: 0}
     - target: {fileID: 3040532121010719100, guid: eca5587fe58f1de46b3711d26d0e2944,
         type: 3}
