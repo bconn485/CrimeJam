@@ -70,6 +70,8 @@
     <Compile Include="Assets\Scripts\Dumb Enemy Script\Enemy21.cs" />
     <Compile Include="Assets\Scripts\Dumb Enemy Script\Enemy22.cs" />
     <Compile Include="Assets\Scripts\Dumb Enemy Script\Enemy23.cs" />
+    <Compile Include="Assets\Scripts\PuzzleMove.cs" />
+    <Compile Include="Assets\Scripts\PuzzleWin.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
