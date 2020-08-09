@@ -8,12 +8,13 @@ public class PlayerCont : MonoBehaviour
     [SerializeField] private string levelChange;
     [SerializeField] private string levelChange2;
     public int cashValue = 1;
-    public float speed;
+    public float speed = 2.0f;
     private Rigidbody2D rb;
     private Vector2 moveVelocity;
     int i;
     private Color specialColor;
     public GameObject puzzle;
+    private GameObject puzzleClone;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +32,10 @@ public class PlayerCont : MonoBehaviour
             if (other.gameObject.GetComponent<SpriteRenderer>().color == specialColor) {
                 //Activate minigame
                 GameObject.Find("Main Camera").GetComponentInChildren<Camera>().orthographicSize = 9;
-                puzzle.SetActive(true);
+                puzzleClone = Instantiate(puzzle);
+                puzzleClone.SetActive(true);
+                //pause character (in Update function)
+                speed = 0;
             }
         }
         if (other.gameObject.CompareTag("EndOne"))
@@ -53,6 +57,12 @@ public class PlayerCont : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (puzzleClone && !puzzleClone.activeSelf)
+        {
+            speed = 2.0f;
+            //destroy puzzle
+            Destroy(puzzleClone);
+        }
         Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         moveVelocity = moveInput.normalized * speed;
     }
