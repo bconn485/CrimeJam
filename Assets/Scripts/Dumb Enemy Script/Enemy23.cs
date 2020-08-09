@@ -87,20 +87,20 @@ public class Enemy23 : MonoBehaviour
             }
             else
             {
-                Invoke("Down", 3.5f);
+                Invoke("Down", 11);
             }
         }
         if (moveDown)
         {
-            Invoke("Up", 3.5f);
+            Invoke("Up", 7);
         }
         if (moveUp)
         {
-            Invoke("Right", 3.5f);
+            Invoke("Right", 7);
         }
         if (moveRight)
         {
-            Invoke("Left", 3.5f);
+            Invoke("Left", 11);
         }
         // if (moveDown)
         //  {
