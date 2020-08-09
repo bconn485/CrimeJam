@@ -11,10 +11,13 @@ public class PlayerCont : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 moveVelocity;
     int i;
+    private Color specialColor;
+    public GameObject puzzle;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        specialColor = GameObject.Find("Cash (3)").GetComponent<SpriteRenderer>().color;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -24,6 +27,11 @@ public class PlayerCont : MonoBehaviour
             Score.instance.ChangeScore(cashValue);
             Destroy(other.gameObject);
             i++;
+            if (other.gameObject.GetComponent<SpriteRenderer>().color == specialColor) {
+                //Activate minigame
+                GameObject.Find("Main Camera").GetComponentInChildren<Camera>().orthographicSize = 9;
+                puzzle.SetActive(true);
+            }
         }
         if (other.gameObject.CompareTag("EndOne"))
         {
