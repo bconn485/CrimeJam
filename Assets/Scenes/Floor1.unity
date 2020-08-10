@@ -791,7 +791,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122609702}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.85, y: -0.39, z: -10}
+  m_LocalPosition: {x: 2.85, y: -0.39, z: -1.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1118967976}
@@ -899,7 +899,7 @@ GameObject:
   m_Component:
   - component: {fileID: 153333765}
   - component: {fileID: 153333766}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: BackgroundImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -959,7 +959,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: cef0ab442eccfa14e903280f6d153e3f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1199,7 +1199,7 @@ GameObject:
   m_Component:
   - component: {fileID: 180846939}
   - component: {fileID: 180846940}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: piece6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1259,7 +1259,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 2ea32d511c37e854ab4ce67f0ec50169, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
@@ -1283,7 +1283,7 @@ GameObject:
   - component: {fileID: 208326303}
   - component: {fileID: 208326302}
   - component: {fileID: 208326301}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: piece4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1382,7 +1382,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: e7a3e125ab3a901499b28a43fcf63736, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1515,7 +1515,7 @@ GameObject:
   - component: {fileID: 270350524}
   - component: {fileID: 270350523}
   - component: {fileID: 270350522}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: piece5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1614,7 +1614,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: 9a06e9176a037d546b65e302aa648d95, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2365,7 +2365,7 @@ GameObject:
   m_Component:
   - component: {fileID: 514487960}
   - component: {fileID: 514487961}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: PointsHandler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2799,7 +2799,7 @@ GameObject:
   - component: {fileID: 641117708}
   - component: {fileID: 641117707}
   - component: {fileID: 641117706}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Win
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2822,7 +2822,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.7327107, y: -1.7434692}
+  m_AnchoredPosition: {x: -1.7327107, y: -2.58}
   m_SizeDelta: {x: 8.439529, y: 3.858633}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!102 &641117706
@@ -2846,7 +2846,7 @@ TextMesh:
   m_Font: {fileID: 0}
   m_Color:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4294199378
 --- !u!23 &641117707
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2905,7 +2905,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 659240477}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: puzzle_pieces
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3271,7 +3271,7 @@ GameObject:
   - component: {fileID: 761375375}
   - component: {fileID: 761375374}
   - component: {fileID: 761375373}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: piece1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3370,7 +3370,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: ad75a8248dd526747af1b7ef7255ff3c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3589,7 +3589,7 @@ GameObject:
   m_Component:
   - component: {fileID: 812428639}
   - component: {fileID: 812428640}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: piece3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3649,7 +3649,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: ddfe8136e61ea1d4a8d682bd1e43d087, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -3959,7 +3959,7 @@ GameObject:
   m_Component:
   - component: {fileID: 878655803}
   - component: {fileID: 878655804}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: piece5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4019,7 +4019,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 9a06e9176a037d546b65e302aa648d95, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -4040,7 +4040,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 879180676}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Puzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4055,7 +4055,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 879180675}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: -37}
+  m_LocalPosition: {x: 1, y: 0, z: -42.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 659240477}
@@ -4092,7 +4092,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 906187475}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.94, y: 2.06, z: -10}
+  m_LocalPosition: {x: -5.94, y: 2.06, z: -1.8800001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1118967976}
@@ -4529,7 +4529,7 @@ GameObject:
   - component: {fileID: 958266307}
   - component: {fileID: 958266306}
   - component: {fileID: 958266305}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: piece6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4628,7 +4628,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: 2ea32d511c37e854ab4ce67f0ec50169, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4776,7 +4776,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 980533356}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.03, y: 3.62, z: -10}
+  m_LocalPosition: {x: -1.03, y: 3.62, z: -1.8800001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1118967976}
@@ -5104,7 +5104,7 @@ GameObject:
   - component: {fileID: 1028070873}
   - component: {fileID: 1028070872}
   - component: {fileID: 1028070871}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: piece3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5203,7 +5203,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: ddfe8136e61ea1d4a8d682bd1e43d087, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5927,7 +5927,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1275255324}
   - component: {fileID: 1275255325}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: piece1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5987,7 +5987,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: ad75a8248dd526747af1b7ef7255ff3c, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -6095,7 +6095,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1287275396}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.02, y: -2.7, z: -10}
+  m_LocalPosition: {x: -5.02, y: -2.7, z: -1.8800001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1118967976}
@@ -6547,7 +6547,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1316797755}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.19, y: -4.42, z: -10}
+  m_LocalPosition: {x: -2.19, y: -4.42, z: -1.8800001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1118967976}
@@ -7457,7 +7457,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1514947270}
   - component: {fileID: 1514947271}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: piece2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7517,7 +7517,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: a7275c30a8848fe4c886254d8fae14c7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
@@ -7759,7 +7759,7 @@ GameObject:
   - component: {fileID: 1576438716}
   - component: {fileID: 1576438715}
   - component: {fileID: 1576438714}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: piece2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7858,7 +7858,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: a7275c30a8848fe4c886254d8fae14c7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8281,7 +8281,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1685161015}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.02, y: 3.52, z: -10}
+  m_LocalPosition: {x: 6.02, y: 3.52, z: -1.8800001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1118967976}
@@ -8446,7 +8446,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1729770407}
   - component: {fileID: 1729770408}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: piece4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8506,7 +8506,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: e7a3e125ab3a901499b28a43fcf63736, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
@@ -9719,7 +9719,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1992354605}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: puzzle_piecesSolved
   m_TagString: Untagged
   m_Icon: {fileID: 0}
