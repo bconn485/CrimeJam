@@ -52,7 +52,7 @@ public class FOV : MonoBehaviour
                 //Used To detect player
                 if (raycastHit2D.collider.name == "Player")
                 {
-                    //Application.LoadLevel(Application.loadedLevel);
+                    Application.LoadLevel(Application.loadedLevel);
 
                 }
             }
