@@ -7,6 +7,7 @@ public class PlayerCont : MonoBehaviour
 {
     [SerializeField] private string levelChange;
     [SerializeField] private string levelChange2;
+    [SerializeField] private string levelChange3;
     public int cashValue = 1;
     public float speed = 2.0f;
     private Rigidbody2D rb;
@@ -50,6 +51,13 @@ public class PlayerCont : MonoBehaviour
             if (i == 7)
             {
                 SceneManager.LoadScene(levelChange2);
+            }
+        }
+        if (other.gameObject.CompareTag("Finish"))
+        {
+            if (i == 14)
+            {
+                SceneManager.LoadScene(levelChange3);
             }
         }
     }
