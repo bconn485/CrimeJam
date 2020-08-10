@@ -8,6 +8,7 @@ public class PlayerCont : MonoBehaviour
     [SerializeField] private string levelChange;
     [SerializeField] private string levelChange2;
     [SerializeField] private string levelChange3;
+    public AudioSource coin;
     public int cashValue = 1;
     public float speed = 2.0f;
     private Rigidbody2D rb;
@@ -19,6 +20,7 @@ public class PlayerCont : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        coin = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>();
         specialColor = GameObject.Find("specialCash").GetComponent<SpriteRenderer>().color;
     }
@@ -27,6 +29,7 @@ public class PlayerCont : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Coin"))
         {
+            coin.Play();
             Score.instance.ChangeScore(cashValue);
             Destroy(other.gameObject);
             i++;
