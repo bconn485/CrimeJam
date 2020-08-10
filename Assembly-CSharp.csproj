@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\Dumb Enemy Script\Enemy38.cs" />
     <Compile Include="Assets\Scripts\Dumb Enemy Script\Enemy39.cs" />
     <Compile Include="Assets\Scripts\Dumb Enemy Script\Enemy31.cs" />
+    <Compile Include="Assets\Scripts\Back.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
