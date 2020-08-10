@@ -14,15 +14,18 @@ public class PlayerCont : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 moveVelocity;
     int i;
-    private Color specialColor;
+    private GameObject puzMin;
+    private GameObject mazeMin;
     public GameObject puzzle;
+    public GameObject maze;
     private GameObject puzzleClone;
     // Start is called before the first frame update
     void Start()
     {
         coin = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>();
-        specialColor = GameObject.Find("specialCash").GetComponent<SpriteRenderer>().color;
+        puzMin = GameObject.Find("puzzleMinigame");
+        mazeMin = GameObject.Find("mazeMinigame");
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -33,10 +36,18 @@ public class PlayerCont : MonoBehaviour
             Score.instance.ChangeScore(cashValue);
             Destroy(other.gameObject);
             i++;
-            if (other.gameObject.GetComponent<SpriteRenderer>().color == specialColor) {
+            if (other.gameObject == puzMin) {
                 //Activate minigame
                 GameObject.Find("Main Camera").GetComponentInChildren<Camera>().orthographicSize = 9;
                 puzzleClone = Instantiate(puzzle);
+                puzzleClone.SetActive(true);
+                //pause character (in Update function)
+                speed = 0;
+            }
+            if (other.gameObject == mazeMin)
+            {
+                //Activate minigame
+                puzzleClone = Instantiate(maze);
                 puzzleClone.SetActive(true);
                 //pause character (in Update function)
                 speed = 0;
