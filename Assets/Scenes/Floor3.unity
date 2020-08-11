@@ -11902,6 +11902,7 @@ GameObject:
   - component: {fileID: 1259178900}
   - component: {fileID: 1259178899}
   - component: {fileID: 1259178901}
+  - component: {fileID: 1259178902}
   m_Layer: 0
   m_Name: BackGround
   m_TagString: Untagged
@@ -12070,6 +12071,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1259178902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259178898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d68e258dd961c9d408bba56bd74061b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1298169650
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12268,7 +12281,7 @@ GameObject:
   - component: {fileID: 1305669074}
   - component: {fileID: 1305669073}
   - component: {fileID: 1305669078}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
