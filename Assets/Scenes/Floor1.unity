@@ -140,7 +140,7 @@ GameObject:
   m_Component:
   - component: {fileID: 33519280}
   - component: {fileID: 33519283}
-  - component: {fileID: 33519282}
+  - component: {fileID: 33519281}
   m_Layer: 11
   m_Name: card (6)
   m_TagString: Untagged
@@ -162,24 +162,19 @@ Transform:
   m_Father: {fileID: 1084655615}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &33519282
-MonoBehaviour:
+--- !u!65 &33519281
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33519279}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07e30f79dbb43524b9edb154c28668be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firstCard: {fileID: 0}
-  secondCard: {fileID: 0}
-  coveredCards: {fileID: 62431097}
-  firstCover: {fileID: 0}
-  secondCover: {fileID: 0}
-  hideCards: {fileID: 1084655614}
+  serializedVersion: 2
+  m_Size: {x: 2.48, y: 3.2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &33519283
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -580,6 +575,7 @@ MonoBehaviour:
   speed: 2
   puzzle: {fileID: 879180675}
   maze: {fileID: 1006095140}
+  match: {fileID: 1889395542}
 --- !u!212 &58868330
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -871,7 +867,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.03, y: 0.07}
+  m_Size: {x: 2.48, y: 3.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1105,7 +1101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 112484949}
   - component: {fileID: 112484952}
-  - component: {fileID: 112484951}
+  - component: {fileID: 112484950}
   m_Layer: 11
   m_Name: card (7)
   m_TagString: Untagged
@@ -1127,24 +1123,19 @@ Transform:
   m_Father: {fileID: 1084655615}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &112484951
-MonoBehaviour:
+--- !u!65 &112484950
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 112484948}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07e30f79dbb43524b9edb154c28668be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firstCard: {fileID: 0}
-  secondCard: {fileID: 0}
-  coveredCards: {fileID: 62431097}
-  firstCover: {fileID: 0}
-  secondCover: {fileID: 0}
-  hideCards: {fileID: 1084655614}
+  serializedVersion: 2
+  m_Size: {x: 2.48, y: 3.2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &112484952
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2581,7 +2572,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.03, y: 0.07}
+  m_Size: {x: 2.48, y: 3.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2815,7 +2806,7 @@ GameObject:
   m_Component:
   - component: {fileID: 329575691}
   - component: {fileID: 329575694}
-  - component: {fileID: 329575693}
+  - component: {fileID: 329575692}
   m_Layer: 11
   m_Name: card (2)
   m_TagString: Untagged
@@ -2837,24 +2828,19 @@ Transform:
   m_Father: {fileID: 1084655615}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &329575693
-MonoBehaviour:
+--- !u!65 &329575692
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 329575690}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07e30f79dbb43524b9edb154c28668be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firstCard: {fileID: 0}
-  secondCard: {fileID: 0}
-  coveredCards: {fileID: 62431097}
-  firstCover: {fileID: 0}
-  secondCover: {fileID: 0}
-  hideCards: {fileID: 1084655614}
+  serializedVersion: 2
+  m_Size: {x: 2.48, y: 3.2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &329575694
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3684,7 +3670,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.03, y: 0.07}
+  m_Size: {x: 2.48, y: 3.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4416,7 +4402,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.03, y: 0.07}
+  m_Size: {x: 2.48, y: 3.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4877,7 +4863,7 @@ GameObject:
   m_Component:
   - component: {fileID: 666880858}
   - component: {fileID: 666880861}
-  - component: {fileID: 666880860}
+  - component: {fileID: 666880859}
   m_Layer: 11
   m_Name: card (5)
   m_TagString: Untagged
@@ -4899,24 +4885,19 @@ Transform:
   m_Father: {fileID: 1084655615}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &666880860
-MonoBehaviour:
+--- !u!65 &666880859
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 666880857}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07e30f79dbb43524b9edb154c28668be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firstCard: {fileID: 0}
-  secondCard: {fileID: 0}
-  coveredCards: {fileID: 62431097}
-  firstCover: {fileID: 0}
-  secondCover: {fileID: 0}
-  hideCards: {fileID: 1084655614}
+  serializedVersion: 2
+  m_Size: {x: 2.48, y: 3.2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &666880861
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5371,7 +5352,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.03, y: 0.07}
+  m_Size: {x: 2.48, y: 3.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -5707,7 +5688,7 @@ GameObject:
   m_Component:
   - component: {fileID: 765863323}
   - component: {fileID: 765863326}
-  - component: {fileID: 765863325}
+  - component: {fileID: 765863324}
   m_Layer: 11
   m_Name: card (1)
   m_TagString: Untagged
@@ -5729,24 +5710,19 @@ Transform:
   m_Father: {fileID: 1084655615}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &765863325
-MonoBehaviour:
+--- !u!65 &765863324
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765863322}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07e30f79dbb43524b9edb154c28668be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firstCard: {fileID: 0}
-  secondCard: {fileID: 0}
-  coveredCards: {fileID: 62431097}
-  firstCover: {fileID: 0}
-  secondCover: {fileID: 0}
-  hideCards: {fileID: 1084655614}
+  serializedVersion: 2
+  m_Size: {x: 2.48, y: 3.2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &765863326
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6092,7 +6068,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.03, y: 0.07}
+  m_Size: {x: 2.48, y: 3.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -7887,6 +7863,7 @@ MonoBehaviour:
   fern: {fileID: 376934129}
   bottle: {fileID: 629764206}
   coveredCards: {fileID: 62431097}
+  matchGame: {fileID: 1889395542}
   matches: 0
 --- !u!1 &997868996
 GameObject:
@@ -9476,7 +9453,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.03, y: 0.07}
+  m_Size: {x: 2.48, y: 3.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -10061,7 +10038,7 @@ PrefabInstance:
     - target: {fileID: 3040532121010719099, guid: eca5587fe58f1de46b3711d26d0e2944,
         type: 3}
       propertyPath: m_Name
-      value: Cash (1)
+      value: matchMinigame
       objectReference: {fileID: 0}
     - target: {fileID: 3040532121010719100, guid: eca5587fe58f1de46b3711d26d0e2944,
         type: 3}
@@ -10117,6 +10094,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3040532121010719101, guid: eca5587fe58f1de46b3711d26d0e2944,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.19607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 3040532121010719101, guid: eca5587fe58f1de46b3711d26d0e2944,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.50980395
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eca5587fe58f1de46b3711d26d0e2944, type: 3}
@@ -11757,7 +11744,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1442646946}
   - component: {fileID: 1442646949}
-  - component: {fileID: 1442646948}
+  - component: {fileID: 1442646947}
   m_Layer: 11
   m_Name: card (4)
   m_TagString: Untagged
@@ -11779,24 +11766,19 @@ Transform:
   m_Father: {fileID: 1084655615}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1442646948
-MonoBehaviour:
+--- !u!65 &1442646947
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1442646945}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07e30f79dbb43524b9edb154c28668be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firstCard: {fileID: 0}
-  secondCard: {fileID: 0}
-  coveredCards: {fileID: 62431097}
-  firstCover: {fileID: 0}
-  secondCover: {fileID: 0}
-  hideCards: {fileID: 1084655614}
+  serializedVersion: 2
+  m_Size: {x: 2.48, y: 3.2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &1442646949
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14055,7 +14037,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.03, y: 0.07}
+  m_Size: {x: 2.48, y: 3.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -14398,7 +14380,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1810292473}
   - component: {fileID: 1810292476}
-  - component: {fileID: 1810292475}
+  - component: {fileID: 1810292474}
   m_Layer: 11
   m_Name: card (3)
   m_TagString: Untagged
@@ -14420,24 +14402,19 @@ Transform:
   m_Father: {fileID: 1084655615}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1810292475
-MonoBehaviour:
+--- !u!65 &1810292474
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1810292472}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07e30f79dbb43524b9edb154c28668be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firstCard: {fileID: 0}
-  secondCard: {fileID: 0}
-  coveredCards: {fileID: 62431097}
-  firstCover: {fileID: 0}
-  secondCover: {fileID: 0}
-  hideCards: {fileID: 1084655614}
+  serializedVersion: 2
+  m_Size: {x: 2.48, y: 3.2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &1810292476
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15030,6 +15007,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1889395543}
+  - component: {fileID: 1889395544}
   m_Layer: 11
   m_Name: Match
   m_TagString: Untagged
@@ -15053,6 +15031,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1889395544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889395542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07e30f79dbb43524b9edb154c28668be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coveredCards: {fileID: 62431097}
+  hideCards: {fileID: 1084655614}
 --- !u!1 &1896481862
 GameObject:
   m_ObjectHideFlags: 0
@@ -16345,24 +16337,19 @@ Transform:
   m_Father: {fileID: 1084655615}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2111314275
-MonoBehaviour:
+--- !u!65 &2111314275
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2111314273}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07e30f79dbb43524b9edb154c28668be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firstCard: {fileID: 0}
-  secondCard: {fileID: 0}
-  coveredCards: {fileID: 62431097}
-  firstCover: {fileID: 0}
-  secondCover: {fileID: 0}
-  hideCards: {fileID: 1084655614}
+  serializedVersion: 2
+  m_Size: {x: 2.48, y: 3.2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &2111314276
 SpriteRenderer:
   m_ObjectHideFlags: 0
