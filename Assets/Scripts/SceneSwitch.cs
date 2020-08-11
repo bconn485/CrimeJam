@@ -15,6 +15,7 @@ public class SceneSwitch : MonoBehaviour
 
     public void Change()
     {
+        Debug.Log(levelChange);
         SceneManager.LoadScene(levelChange);
     }
     public void Change2()
