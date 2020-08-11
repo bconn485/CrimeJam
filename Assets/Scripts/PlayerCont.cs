@@ -16,8 +16,10 @@ public class PlayerCont : MonoBehaviour
     int i;
     private GameObject puzMin;
     private GameObject mazeMin;
+    private GameObject matchMin;
     public GameObject puzzle;
     public GameObject maze;
+    public GameObject match;
     private GameObject puzzleClone;
     // Start is called before the first frame update
     void Start()
@@ -26,6 +28,7 @@ public class PlayerCont : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         puzMin = GameObject.Find("puzzleMinigame");
         mazeMin = GameObject.Find("mazeMinigame");
+        matchMin = GameObject.Find("matchMinigame");
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -48,6 +51,14 @@ public class PlayerCont : MonoBehaviour
             {
                 //Activate minigame
                 puzzleClone = Instantiate(maze);
+                puzzleClone.SetActive(true);
+                //pause character (in Update function)
+                speed = 0;
+            }
+            if (other.gameObject == matchMin)
+            {
+                //Activate minigame
+                puzzleClone = Instantiate(match);
                 puzzleClone.SetActive(true);
                 //pause character (in Update function)
                 speed = 0;

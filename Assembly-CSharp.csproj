@@ -84,6 +84,8 @@
      <Compile Include="Assets\Scripts\Dumb Enemy Script\Enemy32.cs" />
      <Compile Include="Assets\Scripts\Back.cs" />
      <Compile Include="Assets\Scripts\Dumb Enemy Script\Enemy312.cs" />
+     <Compile Include="Assets\Scripts\MatchGame.cs" />
+     <Compile Include="Assets\Scripts\CardMatch.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/game_dev/CrimeJam/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
