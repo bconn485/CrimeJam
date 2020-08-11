@@ -9,6 +9,7 @@ public class MatchGame : MonoBehaviour
     public GameObject fern;
     public GameObject bottle;
     public GameObject coveredCards;
+    public GameObject matchGame;
 
     List<Sprite> imageList = new List<Sprite>();
     public int matches = 0;
@@ -37,7 +38,10 @@ public class MatchGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (matches == total_matches)
+        {
+            matchGame.SetActive(false);
+        }
     }
     
 }

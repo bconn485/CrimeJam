@@ -4,87 +4,99 @@ using UnityEngine;
 
 public class CardMatch : MonoBehaviour
 {
-    public GameObject firstCard;
-    public GameObject secondCard;
     public GameObject coveredCards;
+    private GameObject firstCard;
+    private GameObject secondCard;
+    private GameObject firstCover;
+    private GameObject secondCover;
+    private bool matching = false;
 
-    public GameObject firstCover;
-    public GameObject secondCover;
     public GameObject hideCards;
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        //if card is clicked
         if (Input.GetMouseButtonDown(0))
         {
-            if (this.firstCard == null)
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            Debug.Log("here");
+            if (!matching)
             {
-                foreach (Transform card in coveredCards.transform)
+            if (Physics.Raycast(ray, out hit, 1000f))
                 {
-                    if (card.name == this.name)
+                    Debug.Log(hit.transform.gameObject.name);
+                    if (this.firstCard == null)
                     {
-                        firstCard = card.gameObject;
-                        break;
+                        Debug.Log("Setting first card");
+                        this.firstCover = hit.transform.gameObject;
+                        foreach (Transform card in coveredCards.transform)
+                        {
+                            if (card.name == hit.transform.gameObject.name)
+                            {
+                                Debug.Log("Confirmed first card");
+                                this.firstCard = card.transform.gameObject;
+                                break;
+                            }
+                        }
+                        this.firstCover.GetComponent<SpriteRenderer>().color = Color.clear;
+                    }
+                    else if (hit.transform.gameObject != this.firstCard)
+                    {
+                        Debug.Log("Setting second card");
+                        this.secondCover = hit.transform.gameObject;
+                        foreach (Transform card in coveredCards.transform)
+                        {
+                            if (card.name == hit.transform.gameObject.name)
+                            {
+                                Debug.Log("Confirmed second card");
+                                this.secondCard = card.transform.gameObject;
+                                break;
+                            }
+                        }
+                        this.secondCover.GetComponent<SpriteRenderer>().color = Color.clear;
                     }
                 }
-                if (firstCard)
-                {
-                    foreach(Transform card in hideCards.transform)
-                    {
-                        card.GetComponent<CardMatch>().firstCover = this.gameObject;
-                    }
-                    firstCover.SetActive(false);
-                }
-            }
-            else
-            {
-                foreach (Transform card in coveredCards.transform)
-                {
-                    if (card.name == this.name)
-                    {
-                        secondCard = card.gameObject;
-                        break;
-                    }
-                }
-                if (secondCard)
-                {
-                    foreach (Transform card in hideCards.transform)
-                    {
-                        card.GetComponent<CardMatch>().secondCover = this.gameObject;
-                    }
-                    secondCover.SetActive(false);
-                }
-            }
 
-            if (firstCard != null && secondCard != null)
-            {
-                CheckForMatch();
+                if (firstCard != null && secondCard != null)
+                {
+                    StartCoroutine(CheckForMatch());
+                }
             }
-            
         }
     }
 
-    void CheckForMatch()
+    private IEnumerator CheckForMatch()
     {
+        matching = true;
+        yield return new WaitForSeconds(1);
         if (firstCard.GetComponent<SpriteRenderer>().sprite == secondCard.GetComponent<SpriteRenderer>().sprite)
         {
             //match!!!
             GameObject.Find("cards").GetComponent<MatchGame>().matches++;
-            firstCard.SetActive(false);
-            secondCard.SetActive(false);
-            foreach (Transform card in hideCards.transform)
-            {
-                card.GetComponent<CardMatch>().firstCard = null;
-                card.GetComponent<CardMatch>().secondCard = null;
-                card.GetComponent<CardMatch>().firstCover = null;
-                card.GetComponent<CardMatch>().secondCover = null;
-            }
+            this.firstCard.SetActive(false);
+            this.secondCard.SetActive(false);
+            this.firstCover.SetActive(false);
+            this.secondCover.SetActive(false);
         }
+        else
+        {
+            // hide cards again
+            this.firstCover.GetComponent<SpriteRenderer>().color = Color.white;
+            this.secondCover.GetComponent<SpriteRenderer>().color = Color.white;
+        }
+
+        this.firstCard = null;
+        this.secondCard = null;
+        this.firstCover = null;
+        this.secondCover = null;
+        matching = false;
     }
 
 
